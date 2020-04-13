@@ -10,3 +10,6 @@ Qt and serial communication
 Cover Flow with QML  
 ![](ratlab2_09/screenshot.png)  
 
+### Task 10
+Fetch and display food recipes  
+![](ratlab2_10/screenshot.png)  
