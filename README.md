@@ -3,6 +3,10 @@
 ### Task 07  
 C++ in embedded environment  
 
-### Task 08
+### Task 08  
 Qt and serial communication  
+
+### Task 09  
+Cover Flow with QML  
+![](ratlab2_09/screenshot.png)  
 

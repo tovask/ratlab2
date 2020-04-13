@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CoverFlowPath.qml</file>
+        <file alias="01">images/01.png</file>
+        <file alias="02">images/02.png</file>
+        <file alias="03">images/03.png</file>
+        <file alias="04">images/04.png</file>
+        <file alias="05">images/05.png</file>
+        <file alias="06">images/06.png</file>
+        <file alias="07">images/07.png</file>
+        <file alias="08">images/08.png</file>
+        <file alias="09">images/09.png</file>
+        <file alias="10">images/10.png</file>
+        <file alias="11">images/11.png</file>
+        <file alias="12">images/12.png</file>
+        <file alias="13">images/13.png</file>
+        <file alias="14">images/14.png</file>
+        <file alias="15">images/15.png</file>
+        <file alias="16">images/16.png</file>
+        <file alias="17">images/17.png</file>
+        <file>MyModell.qml</file>
+        <file>MyDelegate.qml</file>
+    </qresource>
+</RCC>
