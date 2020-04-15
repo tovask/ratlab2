@@ -15,8 +15,12 @@ ApplicationWindow {
         text: qsTr("paprika")
         font.pixelSize: 24
         focus: true
+        KeyNavigation.tab: mouseArea
+        KeyNavigation.backtab: list
+
         onAccepted: {
             mouseArea.download(qparam.text);
+            list.forceActiveFocus()
         }
     }
 
@@ -25,11 +29,22 @@ ApplicationWindow {
         objectName: "mouseArea"
         x: 275
         y: 10
-        width: 75
+        width: 100
         height: 35
+        KeyNavigation.tab: list
+        KeyNavigation.backtab: qparam
 
+        Rectangle {
+            width: parent.width
+            height: parent.height
+            radius: 10
+            antialiasing: true
+            color: "transparent"
+            border.color: mouseArea.activeFocus ? "lightsteelblue" : "transparent"
+            border.width: 3
+        }
         Text {
-            text: "Search...";
+            text: "Search..."
             font.pixelSize: 20;
             color: "blue";
             anchors.centerIn: parent
@@ -39,10 +54,12 @@ ApplicationWindow {
 
         onClicked: {
             download(qparam.text)
+            list.forceActiveFocus()
         }
     }
 
     ListView {
+        id: list
         anchors.top: mouseArea.bottom
         anchors.bottom: parent.bottom
         width: parent.width
@@ -83,6 +100,8 @@ ApplicationWindow {
             }
         }
         highlight: Rectangle { color: "gray"; radius: 5 }
-        focus: true
+        //focus: true
+        KeyNavigation.tab: qparam
+        KeyNavigation.backtab: mouseArea
     }
 }
