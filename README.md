@@ -1,5 +1,9 @@
 # works for the Applied Computer Systems Laboratory 2 course
 
+### Task 04  
+Positioning with Matlab  
+![](ratlab2_04/auto_meas_pos.png)  
+
 ### Task 07  
 C++ in embedded environment  
 
